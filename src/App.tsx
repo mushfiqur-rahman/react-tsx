@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import Alert from "./components/Alert";
-import Button from "./components/Button";
+import Button from "./components/Button/Button";
 import ListGroup from "./components/ListGroup";
 
 function App() {
@@ -18,7 +18,7 @@ function App() {
   const [alertVisibility, setAlertVisibility] = useState(false);
   return (
     <>
-      <div>
+      <div className="container">
         {alertVisibility && (
           <Alert onClose={() => setAlertVisibility(false)}>
             Hello <span>World</span>
