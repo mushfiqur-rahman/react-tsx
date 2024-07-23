@@ -3,6 +3,7 @@ import "./App.css";
 import Alert from "./components/Alert";
 import Button from "./components/Button/Button";
 import ListGroup from "./components/ListGroup";
+import Like from "./components/Like";
 
 function App() {
   let items = [
@@ -27,6 +28,7 @@ function App() {
         <Button color="primary" onClick={() => setAlertVisibility(true)}>
           My Button
         </Button>
+        <Like onClick={()=> console.log('clicked')}/>
         <ListGroup items={items} heading="Cities" />
       </div>
     </>
