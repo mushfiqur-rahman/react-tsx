@@ -6,7 +6,7 @@ import ListGroup from "./components/ListGroup";
 import Like from "./components/Like";
 
 function App() {
-  let items = [
+  const items = [
     "Khulna",
     "Dhaka",
     "Rajshahi",
@@ -23,12 +23,13 @@ function App() {
         {alertVisibility && (
           <Alert onClose={() => setAlertVisibility(false)}>
             Hello <span>World</span>
+            35th No Lecture
           </Alert>
         )}
         <Button color="primary" onClick={() => setAlertVisibility(true)}>
           My Button
         </Button>
-        <Like onClick={()=> console.log('clicked')}/>
+        <Like onClick={() => console.log("clicked")} />
         <ListGroup items={items} heading="Cities" />
       </div>
     </>
